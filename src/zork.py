@@ -42,6 +42,9 @@ def room4(second, itemList):
                 print("---------------------------------------------------------")
                 print("Welcome to the Unofficial Python Version of Zork. Your mission is to find a Jade Statue.")
                 living_status = 'Alive'
+        elif second.lower() == ("going east"):
+                loop = 12
+                living_status == 'Alive'
         elif second.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -154,6 +157,9 @@ def room10(cave_inp, itemList):
         elif cave_inp.lower() == ("scale staircase"):
                 loop = 11
                 living_status = 'Alive'
+        elif cave_inp.lower() == ("going south"):
+                loop = 15
+                living_status = 'Alive'
         elif cave_inp.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -183,6 +189,92 @@ def room11(last_inp, itemList):
                 print("---------------------------------------------------------")
 
         return [loop, living_status]
+
+def room12(user_input, itemList):
+                
+        if user_input.lower() == ("going south"):
+                loop = 4
+                living_status = 'Alive'
+        elif user_input.lower() == ("going west"):
+                print("Opening a rickety window you climb into the house.")
+        elif user_input.lower() == ("kick the bucket"):
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
+        else:
+              print("---------------------------------------------------------")
+        return [loop, living_status]
+
+def room13(user_input, itemList):
+
+        if user_input.lower() == ("going up"):
+                loop = 14
+                living_status = 'Alive'
+        elif user_input.lower() == ("going east"):
+                loop = 12
+                living_status = 'Alive'
+        elif user_input.lower() == ("kick the bucket"):
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
+        else:
+                print("---------------------------------------------------------")
+                
+        return [loop, living_status] 
+
+def room14(user_input, itemList):
+        if user_input.lower() == ("going down"):
+                loop = 13
+                living_status = 'Alive'
+        elif user_input.lower() == ("kick the bucket"):
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
+        else:
+                print("---------------------------------------------------------")
+                
+        return [loop, living_status] 
+
+def room15(user_input, itemList):
+        if user_input.lower() == ("going north"):
+                loop = 10
+                living_status = 'Alive'
+        elif user_input.lower() == ("going south"):
+                loop = 16
+                living_status = 'Alive'
+        elif user_input.lower() == ("kick the bucket"):
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
+        else:
+                print("---------------------------------------------------------")
+                
+        return [loop, living_status]
+
+def room16(user_input, itemList):
+        if user_input.lower() == ("going north"):
+                loop = 15
+                living_status = 'Alive'
+        else:
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("You have been eaten by the grue."
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
 
 def PrintOutput(s):
     print("OUTPUT", s)
