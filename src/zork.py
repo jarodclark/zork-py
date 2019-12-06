@@ -16,10 +16,12 @@ def room4(second, itemList):
                 print("---------------------------------------------------------")
                 print("It is securely anchored.")
                 living_status = 'Alive'
+                loop = 4
         elif second.lower() == ("open mailbox"):
                 print("---------------------------------------------------------")
                 print("Opening the small mailbox reveals a leaflet.")
                 living_status = 'Alive'
+                loop = 4
         elif second.lower() == ("go north"):
                 loop = 1
                 living_status = 'Alive'
@@ -27,14 +29,17 @@ def room4(second, itemList):
                 print("---------------------------------------------------------")
                 print("The door cannot be opened.")
                 living_status = 'Alive'
+                loop = 4
         elif second.lower() == ("take boards"):
                 print("---------------------------------------------------------")
                 print("The boards are securely fastened.")
                 living_status = 'Alive'
+                loop = 4
         elif second.lower() == ("look at house"):
                 print("---------------------------------------------------------")
                 print("The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.")
                 living_status = 'Alive'
+                loop = 4
         elif second.lower() == ("go southwest"):
                 loop = 8
                 living_status = 'Alive'
@@ -66,10 +71,12 @@ def room1(north_house_inp, itemList):
                 print("---------------------------------------------------------")
                 print("You don't have a change of clothes and you aren't here on vacation.")
                 living_status = 'Alive'
+                loop = 1
         elif north_house_inp.lower() == ("fish"):
                 print("---------------------------------------------------------")
                 print("You spend some time fishing but nothing seems to bite.")
                 living_status = 'Alive'
+                loop = 1
         elif north_house_inp.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -88,16 +95,20 @@ def room8(forest_inp, itemList):
                 print("---------------------------------------------------------")
                 print("You would need a machete to go further west.")
                 living_status = 'Alive'
+                loop = 8
         elif forest_inp.lower() == ("go north"):
                 print("---------------------------------------------------------")
                 print("The forest becomes impenetrable to the North.")
                 living_status = 'Alive'
+                loop = 8
         elif forest_inp.lower() == ("go south"):
                 print("---------------------------------------------------------")
                 print("Storm-tossed trees block your way.")
                 living_status = 'Alive'
+                loop = 8
         elif forest_inp.lower() == ("go east"):
                 loop = 9
+                living_status = 'Alive'
         elif forest_inp.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -115,6 +126,7 @@ def room9(grating_inp, itemList):
                 print("---------------------------------------------------------")
                 print("You see a large ogre and turn around.")
                 living_status = 'Alive'
+                loop = 9
         elif grating_inp.lower() == ("descend grating"):
                 loop = 10
                 living_status = 'Alive'
@@ -139,18 +151,22 @@ def room10(cave_inp, itemList):
                 print("---------------------------------------------------------")
                 print("Why would you do that? Are you some sort of sicko?")
                 living_status = 'Alive'
+                loop = 10
         elif cave_inp.lower() == ("smash skeleton"):
                 print("---------------------------------------------------------")
                 print("Sick person. Have some respect mate.")
                 living_status = 'Alive'
+                loop = 10
         elif cave_inp.lower() == ("light up room"):
                 print("---------------------------------------------------------")
                 print("You would need a torch or lamp to do that.")
                 living_status = 'Alive'
+                loop = 10
         elif cave_inp.lower() == ("break skeleton"):
                 print("---------------------------------------------------------")
                 print("I have two questions: Why and With What?")
                 living_status = 'Alive'
+                loop = 10
         elif cave_inp.lower() == ("go down staircase"):
                 loop = 11
                 living_status = 'Alive'
@@ -179,10 +195,13 @@ def room11(last_inp, itemList):
         if last_inp.lower() == ("open trunk"):
                 print("---------------------------------------------------------")
                 print("You have found the Jade Statue and have completed your quest!")
+                living_status = 'Alive'
+                loop = 11
         elif last.inp.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
                 print("---------------------------------------------------------")
+                living_status = 'Dead'
                 dead_inp = input("Do you want to continue? Y/N ")
                 exit_function(dead_inp)
         else:
@@ -197,6 +216,8 @@ def room12(user_input, itemList):
                 living_status = 'Alive'
         elif user_input.lower() == ("going west"):
                 print("Opening a rickety window you climb into the house.")
+                living_status = 'Alive'
+                loop = 12
         elif user_input.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
