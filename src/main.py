@@ -72,6 +72,7 @@ while True:
         print("---------------------------------------------------------")
         print("You find yourself in a lit attic with cob webs everywhere.")
         print("The set of stairs will take you back down.")
+        print("You also see a half opened window you can go out of.")
         room14_input = input("What do you do? ")
         room_status = zork.room14(room14_input, [])
         loop = room_status[0]
@@ -87,6 +88,14 @@ while True:
         print("You are stuck deep in the maze with little options left.")
         room16_input = input("What do you do? ")
         room_status = zork.room16(room16_input, [])
+        loop = room_status[0]
+    while loop == 17:
+        print("---------------------------------------------------------")
+        print("You have chosen to go out the window and now are on the roof.")
+        print("It is a thin area.")
+        print("You can go back or you can jump.")
+        room17_input = input("What do you do? ")
+        room_status = zork.room17(room17_input, [])
         loop = room_status[0]
 
 

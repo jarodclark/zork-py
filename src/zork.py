@@ -232,6 +232,9 @@ def room14(user_input, itemList):
         if user_input.lower() == ("going down"):
                 loop = 13
                 living_status = 'Alive'
+        elif user_input.lower() == ("window"):
+                loop = 17
+                living_status = 'Alive'
         elif user_input.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -270,11 +273,29 @@ def room16(user_input, itemList):
         else:
                 print("---------------------------------------------------------")
                 print("You die.")
-                print("You have been eaten by the grue."
+                print("You have been eaten by the grue.")
                 print("---------------------------------------------------------")
                 living_status = 'Dead'
                 dead_inp = living_status
                 exit_function(dead_inp)
+                      
+        return [loop, living_status]
+
+def room17(user_input, itemList):
+        if user_input.lower() == ("go back inside"):
+                loop = 14
+                living_status = 'Alive'
+        elif user_input.lower() == ("jump"):
+                print("---------------------------------------------------------")
+                print("You die.")
+                print("---------------------------------------------------------")
+                living_status = 'Dead'
+                dead_inp = living_status
+                exit_function(dead_inp)
+        else:
+                print("---------------------------------------------------------")
+                
+        return [loop, living_status]
 
 def PrintOutput(s):
     print("OUTPUT", s)
