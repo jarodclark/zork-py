@@ -60,6 +60,7 @@ def room4(second, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 4
+                living_status = 'Alive'
 
         return [loop, living_status]
 
@@ -88,6 +89,7 @@ def room1(north_house_inp, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 1
+                living_status = 'Alive'
         return [loop, living_status]
 
 def room8(forest_inp, itemList):
@@ -120,6 +122,7 @@ def room8(forest_inp, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 8
+                living_status = 'Alive'
         return [loop, living_status]
 
 def room9(grating_inp, itemList):
@@ -142,6 +145,7 @@ def room9(grating_inp, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 9
+                living_status = 'Alive'
 
         return [loop, living_status]
 
@@ -191,6 +195,7 @@ def room10(cave_inp, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 10
+                living_status = 'Alive'
 
         return [loop, living_status]
 
@@ -211,6 +216,7 @@ def room11(last_inp, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 11
+                living_status = 'Alive'
 
         return [loop, living_status]
 
@@ -233,6 +239,7 @@ def room12(user_input, itemList):
         else:
               print("---------------------------------------------------------")
               loop = 12
+              living_status = 'Alive'
         return [loop, living_status]
 
 def room13(user_input, itemList):
@@ -253,6 +260,7 @@ def room13(user_input, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 13
+                living_status = 'Alive'
                 
         return [loop, living_status] 
 
@@ -273,6 +281,7 @@ def room14(user_input, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 14
+                living_status = 'Alive'
                 
         return [loop, living_status] 
 
@@ -325,6 +334,7 @@ def room17(user_input, itemList):
         else:
                 print("---------------------------------------------------------")
                 loop = 17
+                living_status = 'Alive'
                 
         return [loop, living_status]
 
