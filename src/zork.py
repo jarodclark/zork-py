@@ -59,6 +59,7 @@ def room4(second, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 4
 
         return [loop, living_status]
 
@@ -86,7 +87,7 @@ def room1(north_house_inp, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
-                
+                loop = 1
         return [loop, living_status]
 
 def room8(forest_inp, itemList):
@@ -118,6 +119,7 @@ def room8(forest_inp, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 8
         return [loop, living_status]
 
 def room9(grating_inp, itemList):
@@ -139,6 +141,7 @@ def room9(grating_inp, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 9
 
         return [loop, living_status]
 
@@ -187,6 +190,7 @@ def room10(cave_inp, itemList):
                 loop = 11
         else:
                 print("---------------------------------------------------------")
+                loop = 10
 
         return [loop, living_status]
 
@@ -206,6 +210,7 @@ def room11(last_inp, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 11
 
         return [loop, living_status]
 
@@ -227,6 +232,7 @@ def room12(user_input, itemList):
                 exit_function(dead_inp)
         else:
               print("---------------------------------------------------------")
+              loop = 12
         return [loop, living_status]
 
 def room13(user_input, itemList):
@@ -246,6 +252,7 @@ def room13(user_input, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 13
                 
         return [loop, living_status] 
 
@@ -265,6 +272,7 @@ def room14(user_input, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 14
                 
         return [loop, living_status] 
 
@@ -284,6 +292,7 @@ def room15(user_input, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 15
                 
         return [loop, living_status]
 
@@ -315,6 +324,7 @@ def room17(user_input, itemList):
                 exit_function(dead_inp)
         else:
                 print("---------------------------------------------------------")
+                loop = 17
                 
         return [loop, living_status]
 
