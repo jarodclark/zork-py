@@ -47,6 +47,13 @@ def room4(second, itemList):
                 print("---------------------------------------------------------")
                 print("Welcome to the Unofficial Python Version of Zork. Your mission is to find a Jade Statue.")
                 living_status = 'Alive'
+                gained_items = []
+                p = items.pick_up('leaflet', 4)
+                if p != -1:
+                        gained_items.append('leaflet')
+                        print('Item Gained: leaflet')
+                else:
+                        print('You already have this item')
         elif second.lower() == ("going east"):
                 loop = 12
                 living_status == 'Alive'
@@ -206,7 +213,6 @@ def room11(last_inp, itemList):
                 print("You have found the Jade Statue and have completed your quest!")
                 print("You win!")
                 exit()
-                
         elif last.inp.lower() == ("kick the bucket"):
                 print("---------------------------------------------------------")
                 print("You die.")
@@ -244,10 +250,19 @@ def room12(user_input, itemList):
         return [loop, living_status]
 
 def room13(user_input, itemList):
-
+        gained_item = []
         if user_input.lower() == ("going up"):
                 loop = 14
                 living_status = 'Alive'
+        elif user_input.lower() == ('take lantern'):
+                living_status = 'Alive'
+                loop = 13
+                p = items.pick_up('lantern')
+                if p != -1:
+                        gained_items.append('lantern')
+                        print('Item Gained: lantern')
+                else:
+                        print('You already have this item')
         elif user_input.lower() == ("going east"):
                 loop = 12
                 living_status = 'Alive'

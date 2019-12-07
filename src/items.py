@@ -4,8 +4,8 @@
 room0items = []
 room1items = []
 room2items = []
-room3items = []
-room4items = []
+room3items = ['Lantern']
+room4items = ['leaflet']
 # ...
 
 allItems = [room0items, room1items, room2items, room3items, room4items]
@@ -26,4 +26,5 @@ def put_down(itemName, roomNum):
     # TODO Add item to room item list
     return 0
 
-# def useItem()
+def useItem(item):
+    print(item)
